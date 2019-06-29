@@ -65,10 +65,10 @@
     <section class="about-intro">
       <div class="content-wrapper">
         <div class="content-wrapper-inner">
-          <div class="intro">
-            <div class="intro-wrapper">
-              <p>Learn more about me</p>
-              <h3>I make beautiful, responsive <strong>websites</strong></h3>
+          <div class="section-header section-header--half-width">
+            <div class="section-header__wrapper section-header__wrapper--left">
+              <p class="section-header__text">Learn more about me</p>
+              <h3 class="section-header__header-text section-header__header-text--left">I make beautiful, responsive <strong class="section-header__strong-text">websites</strong></h3>
             </div>
           </div>
           <div class="content">
@@ -104,10 +104,10 @@
     <section class="work">
       <div class="content-wrapper">
         <div class="content-wrapper-inner">
-          <div class="intro">
-            <div class="intro-wrapper">
-              <p>Check out</p>
-              <h3>My work</h3>
+          <div class="section-header">
+            <div class="section-header__wrapper">
+              <p class="section-header__text">Check out</p>
+              <h3 class="section-header__header-text">My work</h3>
             </div>
           </div>
           <div class="examples">
@@ -138,10 +138,10 @@
     <section class="articles">
       <div class="content-wrapper">
         <div class="content-wrapper-inner">
-          <div class="intro">
-            <div class="intro-wrapper">
-              <p>Check out</p>
-              <h3>Some of my writing</h3>
+          <div class="section-header">
+            <div class="section-header__wrapper">
+              <p class="section-header__text">Check out</p>
+              <h3 class="section-header__header-text section-header__header-text--background-white">Some of my writing</h3>
             </div>
           </div>
           <div class="main">
@@ -198,10 +198,10 @@
     <section class="contact">
       <div class="content-wrapper">
         <div class="content-wrapper-inner">
-          <div class="intro">
-            <div class="intro-wrapper">
-              <h3>Contact me!</h3>
-              <p>Fill out the form below and I'll be in touch!</p>
+          <div class="section-header">
+            <div class="section-header__wrapper">
+              <h3 class="section-header__header-text section-header__header-text--background-white">Contact me!</h3>
+              <p class="section-header__text section-header__text--text-reverse">Fill out the form below and I'll be in touch!</p>
             </div>
           </div>
           <div class="form-container"></div>
@@ -212,7 +212,7 @@
       <div class="content-wrapper">
         <div class="content-wrapper-inner">
           <div class="copyright-text">
-            <p>Copyright @ 2019 Leland Scanlan</p>
+            <p>Copyright © 2019 Leland Scanlan</p>
           </div>
           <div class="scroll">
               <a href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
@@ -239,7 +239,8 @@
     hbspt.forms.create({
     portalId: "437004",
     formId: "ef8c9cdf-c23a-40d0-972f-0db9911fe909",
-    target: ".form-container"
+    target: ".form-container",
+    submitButtonClass: "cta cta--form"
   });
   </script>
 
