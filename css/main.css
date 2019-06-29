@@ -378,17 +378,6 @@ main .about-details .content-wrapper-inner {
   justify-content: space-evenly;
   align-items: center;
 }
-main .about-details .about-individual-detail {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
-main .about-details .about-individual-detail .number {
-  font-size: 42px;
-  font-weight: 700;
-}
-main .about-details .about-individual-detail .label {
-  font-size: 18px;
-}
 main .work .content-wrapper-inner {
   display: flex;
   flex-direction: column;
@@ -739,3 +728,18 @@ footer .copyright .links a:not(:first-child):before {
 .cta--form {
   cursor: pointer;
 }
+
+/* number box block and elements */
+.number-box {
+  display: block;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.number-box__number {
+  font-size: 42px;
+  font-weight: 700;
+}
+.number-box__label {
+  font-size: 18px;
+}
+
