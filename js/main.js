@@ -53,19 +53,22 @@
     }
 
     // mobile menu functionality
-    mobileMenu('.nav__mobile-trigger', '.nav__wrapper', 'nav__wrapper--open');
+    mobileMenu('.nav__mobile-trigger', '.nav', '.nav__wrapper', 'nav--open', 'nav__wrapper--open');
 
     // declare the mobile menu function
-    function mobileMenu(triggerElement, menuElement, openClassname) {
+    function mobileMenu(triggerElement, menuElementParent, menuElementChild, openClassnameParent, openClassnameChild) {
 
         // add the event handler function for the mobile trigger click event
         // on click this adds or removes a class from the .hs-menu element
         document.querySelector(triggerElement).addEventListener('click', function() {
-            let menu = document.querySelector(menuElement);
-            if(menu.classList.contains(openClassname)) {
-                menu.classList.remove(openClassname);
+            let menu = document.querySelector(menuElementParent);
+            let menuWrapper = document.querySelector(menuElementChild);
+            if(menu.classList.contains(openClassnameParent)) {
+                menu.classList.remove(openClassnameParent);
+                menuWrapper.classList.remove(openClassnameChild);
             } else {
-                menu.classList.add(openClassname);
+                menu.classList.add(openClassnameParent);
+                menuWrapper.classList.add(openClassnameChild);
             }
         });
 

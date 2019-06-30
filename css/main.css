@@ -7,6 +7,10 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 ::-moz-selection {
   background: #7570c8;
   text-shadow: none;
@@ -286,13 +290,14 @@ footer .copyright .links a:not(:first-child):before {
 @media(max-width: 767px) {
   .nav {
     position: relative;
+    margin-right: 10px;
   }
   .nav__wrapper {
     position: absolute;
     display: block;
-    width: 160px;
+    width: 180px;
     top: 42px;
-    right: -175px;
+    right: -195px;
     transition: right .2s ease-out;
     background-color: #ebecee;
     opacity: 0.85;
@@ -308,17 +313,17 @@ footer .copyright .links a:not(:first-child):before {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
   }
-  .nav__wrapper--open {
-    right: -15px;
-  }
 }
 /* nav modifiers */
 .nav__item--first {
   margin-left: 0;
 }
 @media(max-width: 767px) {
-  .nav {
-    margin-right: 10px;
+  .nav--open {
+    overflow: visible;
+  }
+  .nav__wrapper--open {
+    right: -15px;
   }
 }
 
@@ -343,6 +348,14 @@ footer .copyright .links a:not(:first-child):before {
 }
 .banner-body__button-container {
   margin-top: 20px;
+}
+@media(max-width: 767px) {
+  .banner-body__header-text {
+    font-size: 40px;
+  }
+  .banner-body__text {
+    font-size: 18px
+  }
 }
 
 /* scroll-arrow block */
@@ -470,6 +483,13 @@ footer .copyright .links a:not(:first-child):before {
 }
 .cta--right {
   margin-left: 15px;
+}
+@media(max-width: 767px) {
+  .cta--right {
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 /* number box block and elements */
