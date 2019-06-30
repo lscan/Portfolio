@@ -107,7 +107,7 @@ main .about-intro .content-wrapper-inner {
   align-items: flex-start;
 }
 main .about-details .content-wrapper-inner {
-  margin: 60px 0;
+  padding: 60px 0;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -239,7 +239,7 @@ footer .copyright .links a:not(:first-child):before {
 
 /* nav block and elements */
 .nav {
-  margin: 20px 0 0 20px;
+  margin: 20px 20px 0 0;
 }
 .nav__item {
   text-transform: uppercase;
