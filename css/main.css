@@ -208,6 +208,27 @@ footer .contact .form-container .hs-error-msgs {
 footer .contact .form-container .hs_submit {
   margin-top: 18px;
 }
+@media(max-width: 767px) {
+  footer .contact .form-container .hs-form fieldset.form-columns-2 .hs-form-field {
+    width: 100%;
+  }
+  footer .contact .form-container fieldset div.hs_email  {
+      margin-top: 20px;
+  }
+  footer .contact .form-container fieldset.form-columns-1 input,
+  footer .contact .form-container fieldset.form-columns-1 textarea,
+  footer .contact .form-container fieldset.form-columns-2 input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  footer .copyright .links a {
+    display: block;
+    line-height: 2;
+  }
+  footer .copyright .links a:not(:first-child):before {
+    display: none;
+  }
+}
 
 /* footer copyright */
 footer .copyright {
