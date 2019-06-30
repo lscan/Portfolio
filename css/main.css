@@ -382,79 +382,9 @@ main .work .content-wrapper-inner {
   display: flex;
   flex-direction: column;
 }
-main .work .content-wrapper-inner .examples {
-  display: block;
-}
-main .work .examples {
-  padding-bottom: 60px;
-}
-main .work .examples-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-main .work .individual-example {
-  flex-basis: 30%;
-  padding: 10px;
-}
-main .work .individual-example img {
-  max-width: 100%;
-}
 main .articles .content-wrapper-inner {
   display: flex;
   flex-direction: column;
-}
-main .articles .main {
-  padding: 0 100px 60px;
-}
-main .articles .main-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-main .articles .main-wrapper .individual-article {
-  flex-basis: 30%;
-  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15);
-}
-main .articles .main-wrapper .individual-article .article-header {
-
-}
-main .articles .main-wrapper .individual-article .article-header img {
-  max-width: 100%;
-}
-main .articles .main-wrapper .individual-article .article-body {
-  padding: 15px 30px 18px;
-}
-main .articles .main-wrapper .individual-article .article-body .article-title {
-
-}
-main .articles .main-wrapper .individual-article .article-body .article-title h6 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  margin: 0;
-}
-main .articles .main-wrapper .individual-article .article-body .article-title h6:after {
-  content: '';
-  width: 100%;
-  display: block;
-  height: 1px;
-  background-color: #ebecee;
-  margin-top: 10px;
-}
-main .articles .main-wrapper .individual-article .article-body .article-summary {
-  padding: 10px 0;
-}
-main .articles .main-wrapper .individual-article .article-body .article-summary p {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-main .articles .main-wrapper .individual-article .article-body .read-more {
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  color: black;
 }
 footer section.social {
   background-color: #161616;
@@ -693,4 +623,68 @@ footer .copyright .links a:not(:first-child):before {
 }
 .social__item:hover .social__button--instagram {
   background-color: #e73b59;
+}
+
+/* samples block and elements */
+.samples {
+  display: block;
+  padding-bottom: 60px;
+}
+.samples__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.samples__item {
+  flex-basis: 30%;
+  padding: 10px;
+}
+.samples__image {
+  max-width: 100%;
+}
+.samples__body {
+  padding: 0;
+}
+.samples__title-text {}
+.samples__title-text:after {}
+.samples__summary {}
+.samples__summary-text {}
+.samples__read-more {}
+/* samples modifiers */
+.samples--writing {
+  padding: 0 100px 60px;
+}
+.samples__item--writing {
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15);
+  padding: 0;
+}
+.samples__body--writing {
+  padding: 15px 30px 18px;
+}
+.samples__title-text--writing {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+.samples__title-text--writing:after {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #ebecee;
+  margin-top: 10px;
+}
+.samples__summary--writing {
+  padding: 10px 0;
+}
+.samples__summary-text--writing {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+.samples__read-more--writing {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: black;
 }
