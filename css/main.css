@@ -283,6 +283,9 @@ footer .copyright .links a:not(:first-child):before {
   color: #605bed;
   padding-bottom: 15px;
 }
+.scroll-arrow__i {
+  pointer-events: none;
+}
 /* scroll-arrow modifiers */
 .scroll-arrow--white {
   color: white;
