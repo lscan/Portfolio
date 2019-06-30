@@ -1,15 +1,12 @@
 (function () {
 
-    const scrollElems = document.querySelectorAll('.nav__item, a.cta, .scroll-arrow');
+    const scrollElems = document.querySelectorAll('.nav__item, a.cta, .scroll-arrow, .samples__link--portfolio');
 
     for (let i = 0; i < scrollElems.length; i++) {
         const elem = scrollElems[i];
         elem.addEventListener('click', function (e) {
             e.preventDefault();
 
-            console.log('e: ', e);
-            console.log('e.target: ', e.target);
-            console.log('e.target.href: ', e.target.href);
             if (e.target.href) {
 
                 // 1. Get the element id to which you want to scroll
