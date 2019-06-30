@@ -1,4 +1,5 @@
 (function () {
+
     const scrollElems = document.querySelectorAll('.nav__item, a.cta, .scroll-arrow');
 
     for (let i = 0; i < scrollElems.length; i++) {
@@ -50,5 +51,25 @@
             })
         }
     }
+
+    // mobile menu functionality
+    mobileMenu('.nav__mobile-trigger', '.nav__wrapper', 'nav__wrapper--open');
+
+    // declare the mobile menu function
+    function mobileMenu(triggerElement, menuElement, openClassname) {
+
+        // add the event handler function for the mobile trigger click event
+        // on click this adds or removes a class from the .hs-menu element
+        document.querySelector(triggerElement).addEventListener('click', function() {
+            let menu = document.querySelector(menuElement);
+            if(menu.classList.contains(openClassname)) {
+                menu.classList.remove(openClassname);
+            } else {
+                menu.classList.add(openClassname);
+            }
+        });
+
+    }
+
 
 })();
