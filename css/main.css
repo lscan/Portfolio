@@ -650,3 +650,8 @@ footer .copyright .links a:not(:first-child):before {
 .social__item:hover .social__button--instagram {
   background-color: #e73b59;
 }
+@media(max-width: 767px) {
+  .social {
+    padding: 20px;
+  }
+}
