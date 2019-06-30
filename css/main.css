@@ -287,25 +287,6 @@ header .header-nav .content-wrapper-inner {
   justify-content: space-between;
   align-items: flex-start;
 }
-header .header-nav .logo-container {
-  margin-left: 20px;
-}
-header .header-nav .logo-container img {
-  width: 100px;
-}
-header .header-nav .nav {
-  margin: 20px 0 0 20px;
-}
-header .header-nav nav a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #434446;
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-header .header-nav nav a:nth-child(n + 2) {
-  margin-left: 14px;
-}
 header .header-content {
   flex-basis: 72%;
 }
@@ -316,24 +297,6 @@ header .header-content .content-wrapper-inner {
   justify-content: center;
   align-items: center;
 }
-header .header-content .content-wrapper-inner h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 50px;
-  margin: 0;
-}
-header .header-content .content-wrapper-inner p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  margin: 10px 0;
-  max-width: 400px;
-  text-align: center;
-}
-header .header-content .content-wrapper-inner .button-container {
-  margin-top: 20px;
-}
-header .header-content .content-wrapper-inner .button-container .cta:nth-child(2) {
-  margin-left: 15px;
-}
 header .header-scroll {
   flex-basis: 14%;
 }
@@ -342,11 +305,6 @@ header .header-scroll .content-wrapper-inner {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-}
-header .header-scroll .content-wrapper-inner a {
-  font-size: 40px;
-  color: #605bed;
-  padding-bottom: 15px;
 }
 main section:nth-child(odd) {
   background-color: #ebecee;
@@ -446,11 +404,6 @@ footer .copyright .copyright-text p {
 }
 footer .copyright .scroll {
   text-align: center;
-}
-footer .copyright .scroll a {
-  font-size: 40px;
-  color: white;
-  padding-bottom: 15px;
 }
 
 
@@ -556,6 +509,9 @@ footer .copyright .links a:not(:first-child):before {
 /* cta modifiers */
 .cta--form {
   cursor: pointer;
+}
+.cta--right {
+  margin-left: 15px;
 }
 
 /* number box block and elements */
@@ -688,4 +644,63 @@ footer .copyright .links a:not(:first-child):before {
 /* simple-text modifiers */
 .simple-text--half-width {
   flex-basis: 50%;
+}
+
+/* scroll-arrow block */
+.scroll-arrow {
+  font-size: 40px;
+  color: #605bed;
+  padding-bottom: 15px;
+}
+/* scroll-arrow modifiers */
+.scroll-arrow--white {
+  color: white;
+}
+
+/* banner-body block and elements */
+.banner-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-body__header-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  margin: 0;
+}
+.banner-body__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+  max-width: 400px;
+  text-align: center;
+}
+.banner-body__button-container {
+  margin-top: 20px;
+}
+
+/* logo block and elements */
+.logo {
+  margin-left: 20px;
+}
+.logo__image {
+  width: 100px;
+}
+
+/* nav block and elements */
+.nav {
+  margin: 20px 0 0 20px;
+}
+.nav__item {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #434446;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 14px;
+}
+/* nav modifiers */
+.nav__item--first {
+  margin-left: 0;
 }
