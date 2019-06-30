@@ -550,6 +550,9 @@ footer .copyright .links a:not(:first-child):before {
 .samples__image {
   max-width: 100%;
 }
+.samples__link {
+  text-decoration: none;
+}
 .samples__body {
   padding: 0;
 }
@@ -571,6 +574,10 @@ footer .copyright .links a:not(:first-child):before {
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15);
   padding: 0;
 }
+.samples__header--writing {
+  background-size: cover;
+  height: 225px;
+}
 .samples__body--writing {
   padding: 15px 30px 18px;
 }
@@ -579,6 +586,7 @@ footer .copyright .links a:not(:first-child):before {
   font-weight: 400;
   font-size: 18px;
   margin: 0;
+  color: black;
 }
 .samples__title-text--writing:after {
   content: '';
