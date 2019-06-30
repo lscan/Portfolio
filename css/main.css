@@ -357,20 +357,6 @@ main .about-intro .content-wrapper-inner {
   justify-content: flex-start;
   align-items: flex-start;
 }
-
-/* temp for bem conversion */
-main .about-intro .content-wrapper-inner > .content {
-  flex-basis: 50%;
-}
-
-main .about-intro .content {
-  padding-right: 20px;
-}
-main .about-intro .content p {
-  margin: 0 0 24px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-}
 main .about-details .content-wrapper-inner {
   margin: 60px 0;
   display: flex;
@@ -687,4 +673,19 @@ footer .copyright .links a:not(:first-child):before {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: black;
+}
+
+/* simple-text block and elements */
+.simple-text {
+  display: block;
+  padding: 60px 20px 60px 0;
+}
+.simple-text__p {
+  margin: 0 0 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+/* simple-text modifiers */
+.simple-text--half-width {
+  flex-basis: 50%;
 }
