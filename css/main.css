@@ -47,6 +47,11 @@ textarea {
   width: 100%;
   height: 100%;
 }
+@media(max-width: 767px) {
+  .content-wrapper {
+    max-width: 80%;
+  }
+}
 .content-wrapper-inner {
   display: flex;
 }
@@ -117,6 +122,16 @@ main .work .content-wrapper-inner {
 }
 main .articles .content-wrapper-inner {
   flex-direction: column;
+}
+@media(max-width: 767px) {
+  main .about-intro .content-wrapper-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .about-details .content-wrapper-inner {
+    flex-direction: column;
+    padding: 20px 0;
+  }
 }
 
 /* ==========================================================================
@@ -328,6 +343,11 @@ footer .copyright .links a:not(:first-child):before {
 .section-header__strong-text {
   font-weight: 700;
 }
+@media(max-width: 767px) {
+  .section-header {
+    padding: 20px 0;
+  }
+}
 /* section header modifiers */
 .section-header--half-width {
   flex-basis: 50%;
@@ -344,6 +364,14 @@ footer .copyright .links a:not(:first-child):before {
 .section-header__text--text-reverse {
   margin-top: 12px;
 }
+@media(max-width: 767px) {
+  .section-header__wrapper--left {
+    text-align: center;
+  }
+  .section-header__header-text--left:after {
+    margin: 12px auto 0;
+  }
+}
 
 /* simple-text block and elements */
 .simple-text {
@@ -354,6 +382,12 @@ footer .copyright .links a:not(:first-child):before {
   margin: 0 0 24px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+}
+@media(max-width: 767px) {
+  .simple-text {
+    padding: 20px 0;
+    text-align: center;
+  }
 }
 /* simple-text modifiers */
 .simple-text--half-width {
@@ -398,6 +432,11 @@ footer .copyright .links a:not(:first-child):before {
 .number-box__label {
   font-size: 18px;
 }
+@media(max-width: 767px) {
+  .number-box {
+    padding: 20px 0;
+  }
+}
 
 /* samples block and elements */
 .samples {
@@ -425,6 +464,11 @@ footer .copyright .links a:not(:first-child):before {
 .samples__summary {}
 .samples__summary-text {}
 .samples__read-more {}
+@media(max-width: 767px) {
+  .samples__wrapper {
+    flex-direction: column;
+  }
+}
 /* samples modifiers */
 .samples--writing {
   padding: 0 100px 60px;
@@ -461,6 +505,17 @@ footer .copyright .links a:not(:first-child):before {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: black;
+}
+@media(max-width: 767px) {
+  .samples--writing {
+    padding: 0 0 20px;
+  }
+  .samples__item--writing {
+    margin-bottom: 20px;
+  }
+  .samples__item--writing:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* social block and elements */
