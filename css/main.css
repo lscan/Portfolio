@@ -317,8 +317,7 @@ footer .copyright .links a:not(:first-child):before {
     top: 42px;
     right: -195px;
     transition: right .2s ease-out;
-    background-color: #ebecee;
-    opacity: 0.85;
+    background-color: rgb(235, 236, 238, .85);
     border-radius: 5px;
   }
   .nav__item {
